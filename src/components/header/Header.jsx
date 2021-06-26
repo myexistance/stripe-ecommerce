@@ -1,12 +1,13 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import CartIcon from '../cart-icon/cart-icon'
 import './Header.styles.scss'
 
 const Header = () => {
   return (
     <nav className='nav-menu container'>
       <div className='logo'>
-        <Link to='/'>NOMAD</Link>
+        <Link to='/'>BE@RBRICK</Link>
       </div>
       <ul>
         <li>
@@ -21,6 +22,7 @@ const Header = () => {
         </li>
         
       </ul>
+      <CartIcon />
     </nav>
   );
 }
